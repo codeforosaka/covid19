@@ -37,12 +37,6 @@ export default {
             'http://www.pref.osaka.lg.jp/keieishien/corona/index.html',
           body:
             '資金繰りに関する相談、経営に関する相談（大阪府産業労働局　報道発表）'
-        },
-        {
-          title: '新しいワークスタイルや企業活動の東京モデル「スムーズビズ」',
-          link: 'https://smooth-biz.metro.tokyo.lg.jp/',
-          body:
-            'テレワーク・時差出勤などスムーズビズの取組は、新型コロナウイルス感染症の対策としても効果的です。感染症対策として、東京2020大会時の交通混雑緩和に向けた取組の前倒しをお願いします。'
         }
       ]
     }
