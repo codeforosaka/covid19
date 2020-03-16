@@ -18,17 +18,11 @@ export default {
     return {
       items: [
         {
-          title: '新型コロナウイルス感染症対応緊急融資',
+          title: '新型コロナウイルス感染症への対応のための融資メニュー',
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/03/05/26.html',
+            'http://www.pref.osaka.lg.jp/kinyushien/korona/index.html',
           body:
-            '新型コロナウイルス感染症により事業活動に影響を受けている中小企業等を対象とした緊急融資制度です。融資限度額は2億8千万円で、信用保証料を府が全額補助します。'
-        },
-        {
-          title: '新型コロナウイルスによる経営課題に関する専門家派遣',
-          link: 'https://www.tokyo-kosha.or.jp/topics/2003/0001.html',
-          body:
-            '新型コロナウイルス感染症により経営面の影響を受けている中小企業を対象に、中小企業診断士等の専門家を無料で派遣し、経営改善等に向けたアドバイスを実施します（１社あたり４回まで・無料）。'
+            '新型コロナウイルス感染症の発生により経営に影響を受けている中小企業のみなさまを支援するための融資制度がございますので、ご活用ください。'
         },
         {
           title: '事業継続緊急対策（テレワーク）助成金',
@@ -40,16 +34,9 @@ export default {
         {
           title: '中小企業者等特別相談窓口',
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/01/30/15.html',
+            'http://www.pref.osaka.lg.jp/keieishien/corona/index.html',
           body:
             '資金繰りに関する相談、経営に関する相談（大阪府産業労働局　報道発表）'
-        },
-        {
-          title: '緊急労働相談ダイヤル',
-          link:
-            'https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/02/26/22.html',
-          body:
-            '新型コロナウイルスに関する休暇や休業の取り扱い、職場のハラスメントなどについての相談（大阪府産業労働局　報道発表）'
         },
         {
           title: '新しいワークスタイルや企業活動の東京モデル「スムーズビズ」',
