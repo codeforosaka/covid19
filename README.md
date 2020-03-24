@@ -2,7 +2,7 @@
 
 ![](https://github.com/codeforosaka/covid19/workflows/production%20deploy/badge.svg)
 
-![大阪府 新型コロナウイルス感染症対策サイト](https://covid19-osaka.info/ogp.png)
+[![大阪府 新型コロナウイルス感染症対策サイト](https://covid19-osaka.info/ogp.png)](https://covid19-osaka.info/)
 
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
