@@ -93,7 +93,7 @@
           :date="Data.patients.date"
           :items="agesData.items"
           :labels="agesData.labels"
-          :unit="'件'"
+          :unit="'人'"
         />
       </v-col>
     </v-row>

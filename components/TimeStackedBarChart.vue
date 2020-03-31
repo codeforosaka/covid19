@@ -130,6 +130,7 @@ export default {
       const unit = this.unit
       const sumArray = this.eachArraySum(this.chartData)
       const data = this.chartData
+      const labels = this.items
       const cumulativeData = this.chartData.map(item => {
         return this.cumulative(item)
       })
@@ -139,18 +140,20 @@ export default {
           displayColors: false,
           callbacks: {
             label: tooltipItem => {
-              const labelText =
-                this.dataKind === 'transition'
-                  ? `${sumArray[tooltipItem.index]}${unit}（府管轄保健所: ${
-                      data[0][tooltipItem.index]
-                    }/政令中核市保健所: ${data[1][tooltipItem.index]}）`
-                  : `${
-                      cumulativeSumArray[tooltipItem.index]
-                    }${unit}（府管轄保健所: ${
-                      cumulativeData[0][tooltipItem.index]
-                    }/政令中核市保健所: ${
-                      cumulativeData[1][tooltipItem.index]
-                    }）`
+              const targetArray =
+                this.dataKind === 'transition' ? sumArray : cumulativeSumArray
+              const targetData =
+                this.dataKind === 'transition' ? data : cumulativeData
+              const labelArray = []
+              let labelText = `${targetArray[tooltipItem.index]}${unit}`
+              for (let i = 0; i < labels.length; i++) {
+                if (targetData[i][tooltipItem.index] > 0) {
+                  labelArray.push(
+                    `${labels[i]}: ${targetData[i][tooltipItem.index]}`
+                  )
+                }
+              }
+              labelText += '(' + labelArray.join(' / ') + ')'
               return labelText
             },
             title(tooltipItem, data) {
@@ -273,7 +276,11 @@ export default {
     eachArraySum(chartDataArray) {
       const sumArray = []
       for (let i = 0; i < chartDataArray[0].length; i++) {
-        sumArray.push(chartDataArray[0][i] + chartDataArray[1][i])
+        let summary = 0
+        for (let j = 0; j < chartDataArray.length; j++) {
+          summary += chartDataArray[j][i]
+        }
+        sumArray.push(summary)
       }
       return sumArray
     }
