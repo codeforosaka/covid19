@@ -89,7 +89,18 @@ export default {
       }
     },
     displayData() {
-      const colorArray = ['#364c97', '#0076eb']
+      const colorArray = [
+        '#364c97',
+        '#0076eb',
+        '#005eeb',
+        '#0076eb',
+        '#0096eb',
+        '#00a6eb',
+        '#00c6eb',
+        '#00e6eb',
+        '#00ebbb',
+        '#05eb94'
+      ]
       if (this.dataKind === 'transition') {
         return {
           labels: this.labels,
