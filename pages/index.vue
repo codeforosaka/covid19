@@ -85,14 +85,12 @@
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
-        <time-stacked-bar-chart
+        <bar-chart
           title="年代別陽性者数"
           :title-id="'number-of-ages'"
-          :chart-id="'time-stacked-bar-chart-inspections2'"
-          :chart-data="agesData.data"
+          :chart-id="'time-bar-chart-inspections'"
+          :chart-data="agesData"
           :date="Data.patients.date"
-          :items="agesData.items"
-          :labels="agesData.labels"
           :unit="'人'"
         />
       </v-col>
@@ -109,6 +107,7 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import DataTable from '@/components/DataTable.vue'
 import formatGraph from '@/utils/formatGraph'
+import BarChart from '@/components/BarChart'
 import formatTable from '@/utils/formatTable'
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import News from '@/data/news.json'
@@ -124,7 +123,8 @@ export default {
     DataTable,
     SvgCard,
     ConfirmedCasesTable,
-    TimeStackedBarChart
+    TimeStackedBarChart,
+    BarChart
   },
   data() {
     // 感染者数グラフ
@@ -178,85 +178,29 @@ export default {
   },
   computed: {
     agesData() {
-      const ageData = {
-        labels: [],
-        items: [
-          '未就学児',
-          '10代',
-          '20代',
-          '30代',
-          '40代',
-          '50代',
-          '60代',
-          '70代',
-          '80代',
-          '90代'
-        ],
-        data: [[], [], [], [], [], [], [], [], [], []]
-      }
+      const ageData = []
 
       const data = {}
-      let lastDate = new Date()
-      for (const i in Data.patients.data) {
-        // eslint-disable-next-line no-prototype-builtins
-        if (Data.patients.data.hasOwnProperty(i) === false) {
-          continue
-        }
-        const row = Data.patients.data[i]
-        let hash = {}
-        if (data[row.date] === undefined) {
-          hash['未就学児'] = 0
-          hash['10代'] = 0
-          hash['20代'] = 0
-          hash['30代'] = 0
-          hash['40代'] = 0
-          hash['50代'] = 0
-          hash['60代'] = 0
-          hash['70代'] = 0
-          hash['80代'] = 0
-          hash['90代'] = 0
-        } else {
-          hash = data[row.date]
-        }
-        hash[row['年代']] += 1
-        data[row.date] = hash
-        lastDate = new Date(row.date)
-      }
-      const dt = new Date(2020, 0, 28, 0, 0, 0)
-      lastDate.setHours(0, 0, 0)
-      while (dt.getTime() < lastDate.getTime()) {
-        dt.setDate(dt.getDate() + 1)
-        const year = String(dt.getFullYear())
-        const month = String(dt.getMonth() + 1)
-        const day = String(dt.getDate())
-        const thisDate =
-          year + '-' + month.padStart(2, '0') + '-' + day.padStart(2, '0')
-        let target = {}
-        target['未就学児'] = 0
-        target['10代'] = 0
-        target['20代'] = 0
-        target['30代'] = 0
-        target['40代'] = 0
-        target['50代'] = 0
-        target['60代'] = 0
-        target['70代'] = 0
-        target['80代'] = 0
-        target['90代'] = 0
-        if (data[thisDate] !== undefined) {
-          target = data[thisDate]
-        }
-        ageData.labels.push(month + '/' + day)
-        ageData.data[0].push(target['未就学児'])
-        ageData.data[1].push(target['10代'])
-        ageData.data[2].push(target['20代'])
-        ageData.data[3].push(target['30代'])
-        ageData.data[4].push(target['40代'])
-        ageData.data[5].push(target['50代'])
-        ageData.data[6].push(target['60代'])
-        ageData.data[7].push(target['70代'])
-        ageData.data[8].push(target['80代'])
-        ageData.data[9].push(target['90代'])
-      }
+      data['未就学児'] = 0
+      data['10代'] = 0
+      data['20代'] = 0
+      data['30代'] = 0
+      data['40代'] = 0
+      data['50代'] = 0
+      data['60代'] = 0
+      data['70代'] = 0
+      data['80代'] = 0
+      data['90代'] = 0
+
+      Data.patients.data.forEach(row => {
+        data[row['年代']] += 1
+      })
+      Object.keys(data).forEach(key => {
+        ageData.push({
+          label: key,
+          cumulative: data[key]
+        })
+      })
       return ageData
     }
   },
