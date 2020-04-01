@@ -9,6 +9,13 @@
     <div class="note">
       {{ note }}
     </div>
+    <template v-slot:infoPanel>
+      <data-view-basic-info-panel
+        :l-text="displayInfo.lText"
+        :s-text="displayInfo.sText"
+        :unit="displayInfo.unit"
+      />
+    </template>
   </data-view>
 </template>
 
@@ -22,9 +29,10 @@
 
 <script>
 import DataView from '@/components/DataView.vue'
+import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
 
 export default {
-  components: { DataView },
+  components: { DataView, DataViewBasicInfoPanel },
   props: {
     title: {
       type: String,
@@ -77,6 +85,17 @@ export default {
       const lastDay = this.chartData.slice(-1)[0].transition
       const lastDayBefore = this.chartData.slice(-2)[0].transition
       return this.formatDayBeforeRatio(lastDay - lastDayBefore)
+    },
+    displayInfo() {
+      let total = 0
+      this.chartData.forEach(d => {
+        total += d.cumulative
+      })
+      return {
+        lText: total,
+        sText: '',
+        unit: this.unit
+      }
     },
     displayData() {
       return {
