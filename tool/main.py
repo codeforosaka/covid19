@@ -207,7 +207,6 @@ class DataJson:
         }
 
     def get_patients_last_update(self) -> str:
-        date = self.patients_sheet.cell(row=1, column=1).value
         return self.patients_sheet.cell(row=1, column=1).value.strftime("%Y/%m/%d %H:%M")
 
     def get_inspections_last_update(self) -> str:
