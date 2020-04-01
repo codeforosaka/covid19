@@ -182,6 +182,7 @@ export default {
 
       const data = {}
       data['未就学児'] = 0
+      data['就学児'] = 0
       data['10代'] = 0
       data['20代'] = 0
       data['30代'] = 0
