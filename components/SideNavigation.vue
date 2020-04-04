@@ -51,7 +51,7 @@
             </picture>
           </a>
           <a
-            href="https://twitter.com/osaka_bousai"
+            href="https://twitter.com/osakaprefPR"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -62,7 +62,7 @@
             </picture>
           </a>
           <a
-            href="https://twitter.com/osakaprefPR"
+            href="https://twitter.com/osaka_bousai"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
