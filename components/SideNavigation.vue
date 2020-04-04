@@ -38,6 +38,63 @@
         </v-container>
       </v-list>
       <div class="SideNavigation-Footer">
+        <div class="SideNavigation-SocialLinkContainer">
+          <a
+            href="https://lin.ee/8IJ5WMv"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/line.webp" type="image/webp" />
+              <img src="/line.png" alt="LINE" />
+            </picture>
+          </a>
+          <a
+            href="https://twitter.com/osaka_bousai"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/twitter.webp" type="image/webp" />
+              <img src="/twitter.png" alt="Twitter" />
+            </picture>
+          </a>
+          <a
+            href="https://twitter.com/osakaprefPR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/twitter.webp" type="image/webp" />
+              <img src="/twitter.png" alt="Twitter" />
+            </picture>
+          </a>
+          <a
+            href="https://www.facebook.com/osaka.pref"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/facebook.webp" type="image/webp" />
+              <img src="/facebook.png" alt="Facebook" />
+            </picture>
+          </a>
+          <a
+            href="https://github.com/codeforosaka/covid19"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/github.webp" type="image/webp" />
+              <img src="/github.png" alt="GitHub" />
+            </picture>
+          </a>
+        </div>
         <small class="SideNavigation-Copyright" lang="en">
           Content on This Site is Licensed Under a
           <a
@@ -227,7 +284,7 @@ export default {
     margin: 12px 0;
   }
   &-Footer {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: $white;
   }
   &-SocialLinkContainer {
@@ -239,6 +296,34 @@ export default {
       }
     }
   }
+  &-SocialLink {
+    border: 1px dotted transparent;
+    border-radius: 30px;
+    color: $gray-3;
+
+    &:link,
+    &:hover,
+    &:visited,
+    &:active {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+      border: 1px dotted $gray-3;
+      outline: none;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
   &-Copyright {
     display: block;
     margin-top: 10px;
@@ -248,6 +333,7 @@ export default {
     font-weight: bold;
   }
 }
+
 .open {
   @include lessThan($small) {
     position: fixed;
