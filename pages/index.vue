@@ -85,6 +85,16 @@
           :unit="'件'"
         />
       </v-col>
+      <v-col cols="12" md="6" class="DataCard">
+        <bar-chart
+          title="年代別陽性者数"
+          :title-id="'number-of-ages'"
+          :chart-id="'time-bar-chart-inspections'"
+          :chart-data="agesData"
+          :date="Data.patients.date"
+          :unit="'人'"
+        />
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -98,6 +108,7 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import DataTable from '@/components/DataTable.vue'
 import formatGraph from '@/utils/formatGraph'
+import BarChart from '@/components/BarChart'
 import formatTable from '@/utils/formatTable'
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import News from '@/data/news.json'
@@ -113,7 +124,8 @@ export default {
     DataTable,
     SvgCard,
     ConfirmedCasesTable,
-    TimeStackedBarChart
+    TimeStackedBarChart,
+    BarChart
   },
   data() {
     // 感染者数グラフ
@@ -164,6 +176,35 @@ export default {
       newsItems: News.newsItems
     }
     return data
+  },
+  computed: {
+    agesData() {
+      const ageData = []
+
+      const data = {}
+      data['未就学児'] = 0
+      data['就学児'] = 0
+      data['10代'] = 0
+      data['20代'] = 0
+      data['30代'] = 0
+      data['40代'] = 0
+      data['50代'] = 0
+      data['60代'] = 0
+      data['70代'] = 0
+      data['80代'] = 0
+      data['90代'] = 0
+
+      Data.patients.data.forEach(row => {
+        data[row['年代']] += 1
+      })
+      Object.keys(data).forEach(key => {
+        ageData.push({
+          label: key,
+          cumulative: data[key]
+        })
+      })
+      return ageData
+    }
   },
   head() {
     return {
