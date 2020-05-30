@@ -157,6 +157,8 @@ export default {
       return {
         tooltips: {
           displayColors: false,
+          intersect: false,
+          axis: 'x',
           callbacks: {
             label(tooltipItem) {
               const labelText = `${parseInt(

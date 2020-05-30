@@ -173,6 +173,12 @@ export default {
       return {
         tooltips: {
           displayColors: false,
+          position: 'nearest',
+          intersect: false,
+          axis: 'x',
+          filter(tooltipItem) {
+            return tooltipItem.datasetIndex === 1
+          },
           callbacks: {
             label: tooltipItem => {
               const labelText =
