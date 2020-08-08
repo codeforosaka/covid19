@@ -35,7 +35,7 @@ jobs:
         KINTONE_API_TOKEN_825: ${{ secrets.KINTONE_API_TOKEN_825 }}
         CLIENT: ${{ secrets.CLIENT }}
       run: |
-        cat $CLIENT > ./tool/client.txt
+        echo $CLIENT > ./tool/client.txt
         python ./tool/main.py
         rm ./tool/client.txt
     - name: Pull request
