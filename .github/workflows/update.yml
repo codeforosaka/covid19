@@ -24,8 +24,20 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r ./tool/requirements.txt
     - name: Run script
+      env:
+        KINTONE_API_TOKEN_816: ${{ secrets.KINTONE_API_TOKEN_816 }}
+        KINTONE_API_TOKEN_818: ${{ secrets.KINTONE_API_TOKEN_818 }}
+        KINTONE_API_TOKEN_819: ${{ secrets.KINTONE_API_TOKEN_819 }}
+        KINTONE_API_TOKEN_820: ${{ secrets.KINTONE_API_TOKEN_820 }}
+        KINTONE_API_TOKEN_821: ${{ secrets.KINTONE_API_TOKEN_821 }}
+        KINTONE_API_TOKEN_822: ${{ secrets.KINTONE_API_TOKEN_822 }}
+        KINTONE_API_TOKEN_823: ${{ secrets.KINTONE_API_TOKEN_823 }}
+        KINTONE_API_TOKEN_825: ${{ secrets.KINTONE_API_TOKEN_825 }}
+        CLIENT: ${{ secrets.CLIENT }}
       run: |
+        cat $CLIENT > ./tool/client.txt
         python ./tool/main.py
+        rm ./tool/client.txt
     - name: Pull request
       uses: peter-evans/create-pull-request@v2
       with:
