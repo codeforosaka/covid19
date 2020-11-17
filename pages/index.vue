@@ -118,6 +118,10 @@
           :url="$t('./data/contacts1.csv')"
         />
       </v-col>
+      <!-- 区市町村別マップ表示 -->
+      <v-col cols="12" md="6" class="DataCard">
+        <graphical-map-card />
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -136,6 +140,7 @@ import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import News from '@/data/news.json'
 import SvgCard from '@/components/SvgCard.vue'
 import ConfirmedCasesTable from '@/components/ConfirmedCasesTable.vue'
+import GraphicalMapCard from '@/components/GraphicalMapCard.vue'
 
 export default {
   components: {
@@ -146,7 +151,8 @@ export default {
     SvgCard,
     ConfirmedCasesTable,
     TimeStackedBarChart,
-    TimeStackedBarChart2
+    TimeStackedBarChart2,
+    GraphicalMapCard
   },
   data() {
     // 感染者数グラフ
