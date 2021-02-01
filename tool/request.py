@@ -1,4 +1,5 @@
 import codecs
+import copy
 import os
 import pandas as pd
 import requests
@@ -43,6 +44,9 @@ class DataJson:
         }
         # 退院・解除済累計
         self.treated_summary_json = {"date": "", "data": []}
+        # 発症日
+        self.onset_summary_json = {"date": "", "data": []}
+        self.onset_open_data_json = {"date": "", "data": []}
         # 最終更新
         jst = timezone(timedelta(hours=9), 'JST')
         self.lastUpdate_json = datetime.today().astimezone(jst).strftime(
@@ -75,6 +79,7 @@ class DataJson:
         }
         # 更新日
         self.update_json = ''
+        self.update_onset_json = ''
 
     def get_kintone_records(self, app_id, query):
         # kintoneから一覧取得
@@ -122,6 +127,13 @@ class DataJson:
         for record in records['records']:
             d_date = datetime.strptime(record['日付']['value'], "%Y-%m-%d")
             self.update_json = d_date.strftime('%Y/%m/%d') + ' 00:00'
+
+        print("更新日付（発症日）の取得START")
+        # 「更新日付」の取得
+        records = self.get_kintone_records('1166', '')
+        for record in records['records']:
+            h_date = datetime.strptime(record['日付']['value'], "%Y-%m-%d")
+            self.update_onset_json = h_date.strftime('%Y/%m/%d') + ' 00:00'
 
         print("陽性者の取得START")
         # 「陽性者」の取得
@@ -310,25 +322,52 @@ class DataJson:
             self.main_summary_json["children"][0]["children"][7]["value"] = \
                 int(record['府外健康観察']['value'])
 
+        print("発症日の取得START")
+        # 「発症日」の取得
+        # 〜〜〜時点は「更新日付（発症日）」アプリの日付 - 1日とする
+        self.onset_summary_json["date"] = self.update_onset_json
+        self.onset_open_data_json["date"] = h_date.strftime('%Y-%m-%d')
+        records = self.get_kintone_records('1161', 'order by 発症日 asc')
+        for record in records['records']:
+            data = {}
+            g_date = datetime.strptime(record['発症日']['value'], "%Y-%m-%d")
+            data['日付'] = g_date.strftime('%Y-%m-%d') + 'T08:00:00.000Z'
+            data['小計'] = int(record['人数']['value'])
+            self.onset_summary_json['data'].append(data)
+            # オープンデータ用
+            data = {}
+            data['発症日'] = g_date.strftime('%Y-%m-%d')
+            data['人数'] = int(record['人数']['value'])
+            self.onset_open_data_json['data'].append(data)
+
         print("jsonまとめSTART")
         # jsonまとめ
-        self.data_json = {
-            "patients": self.patients_json,
-            "patients_summary": self.patients_summary_json,
-            "inspections_summary": self.inspections_summary_json,
-            "contacts1_summary": self.contacts1_summary_json,
-            "contacts2_summary": self.contacts2_summary_json,
-            "transmission_route_summary": self.transmission_route_json,
-            "treated_summary": self.treated_summary_json,
-            "lastUpdate": self.lastUpdate_json,
-            "main_summary": self.main_summary_json,
-            "patients_open": self.patients_open_data_json,
-            "summary_open": self.summary_open_data_json,
-            "contacts1_open": self.contacts1_open_data_json,
-            "contacts2_open": self.contacts2_open_data_json
-        }
-        if self.data_json['patients']['date'] == self.current_data_json['patients']['date']:
-            self.data_json = self.current_data_json
+        # まずは1個前の状態にする
+        self.data_json = copy.copy(self.current_data_json)
+        if self.patients_json['date'] != self.current_data_json['patients']['date']:
+            # 更新日付が異なる場合
+            print("「更新日時」変更あり")
+            self.data_json['patients'] = self.patients_json
+            self.data_json['patients_summary'] = self.patients_summary_json
+            self.data_json['inspections_summary'] = self.inspections_summary_json
+            self.data_json['contacts1_summary'] = self.contacts1_summary_json
+            self.data_json['contacts2_summary'] = self.contacts2_summary_json
+            self.data_json['transmission_route_summary'] = self.transmission_route_json
+            self.data_json['treated_summary'] = self.treated_summary_json
+            self.data_json['lastUpdate'] = self.lastUpdate_json
+            self.data_json['main_summary'] = self.main_summary_json
+            self.data_json['patients_open'] = self.patients_open_data_json
+            self.data_json['summary_open'] = self.summary_open_data_json
+            self.data_json['contacts1_open'] = self.contacts1_open_data_json
+            self.data_json['contacts2_open'] = self.contacts2_open_data_json
+
+        if self.onset_summary_json['date'] != self.current_data_json['onset_summary']['date']:
+            print("「更新日時（発症日）」変更あり")
+            self.data_json['onset_summary'] = self.onset_summary_json
+            self.data_json['lastUpdate'] = self.lastUpdate_json
+            self.data_json['onset_open'] = self.onset_open_data_json
+
+        if self.data_json['lastUpdate'] == self.current_data_json['lastUpdate']:
             print("変更なし")
 
         os.remove(self.cert_txt)
@@ -376,5 +415,9 @@ if __name__ == "__main__":
     if 'contacts2_open' in data:
         contacts2_open_data = data.pop('contacts2_open')
         DataJson().dumps_open_json('contacts2.csv', contacts2_open_data)
+
+    if 'onset_open' in data:
+        contacts2_open_data = data.pop('onset_open')
+        DataJson().dumps_open_json('onset.csv', contacts2_open_data)
 
     DataJson().dumps_json('data.json', data)
