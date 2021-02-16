@@ -35,6 +35,41 @@
           "
         />
       </v-col>
+      <v-col cols="12" md="6" class="DataCard">
+        <rate-chart
+          :title="$t('重症病床使用率')"
+          :title-id="'severe-bed-usage'"
+          :chart-id="'severe-bed-usage'"
+          :chart-data="severeBedUsageGraph"
+          :date="severeBedUsageGraph.updated"
+          :items="severeBedUsageItems"
+          :unit="$t('人')"
+          :url="$t('./data/severe-bed-usage.csv')"
+        />
+      </v-col>
+      <v-col cols="12" md="6" class="DataCard">
+        <rate-chart
+          :title="$t('軽症中等症病床使用率')"
+          :title-id="'mild-moderate-bed-usage'"
+          :chart-id="'mild-moderate-bed-usage'"
+          :chart-data="mildModerateBedUsageGraph"
+          :date="mildModerateBedUsageGraph.updated"
+          :items="mildModerateBedUsageItems"
+          :unit="$t('人')"
+          :url="$t('./data/mild-moderate-bed-usage.csv')"
+        />
+      </v-col>
+      <v-col cols="12" md="6" class="DataCard">
+        <no-cum-time-bar-chart
+          :title="$t('直近1週間の人口10万人あたり新規陽性者数')"
+          :title-id="'number-of-new-positives-per-100_000-population'"
+          :chart-id="'number-of-new-positives-per-100_000-population'"
+          :chart-data="numberOfNewPositivesGraph"
+          :date="numberOfNewPositivesGraph.updated"
+          :unit="$t('人')"
+          :url="$t('./data/number-of-new-positives-per-100_000-population.csv')"
+        />
+      </v-col>
       <!-- 
       <v-col cols="12" md="6" class="DataCard">
         <data-table
@@ -141,12 +176,19 @@ import TimeStackedBarChart2 from '@/components/TimeStackedBarChart2.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
+import SevereBedUsageData from '@/data/severe-bed-usage.json'
+import MildModerateBedUsageData from '@/data/mild-moderate-bed-usage.json'
+import NumberOfNewPositivesData from '@/data/number-of-new-positives-per-100_000-population.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
+import formatRateGraph from '@/utils/formatRateGraph'
+import formatSimpleGraph from '@/utils/formatSimpleGraph'
 import News from '@/data/news.json'
 import SvgCard from '@/components/SvgCard.vue'
 import ConfirmedCasesTable from '@/components/ConfirmedCasesTable.vue'
+import RateChart from '@/components/RateChart.vue'
+import NoCumTimeBarChart from '@/components/NoCumTimeBarChart.vue'
 
 export default {
   components: {
@@ -157,7 +199,9 @@ export default {
     SvgCard,
     ConfirmedCasesTable,
     TimeStackedBarChart,
-    TimeStackedBarChart2
+    TimeStackedBarChart2,
+    RateChart,
+    NoCumTimeBarChart
   },
   data() {
     // 感染者数グラフ
@@ -226,6 +270,32 @@ export default {
       }
     }
 
+    // 重症病床使用率
+    const severeBedUsageGraph = formatRateGraph(
+      SevereBedUsageData.date,
+      SevereBedUsageData.data
+    )
+    const severeBedUsageItems = [
+      '重症病床確保数',
+      '重症入院患者数',
+      '重症病床使用率'
+    ]
+    // 軽症中等症病床使用率
+    const mildModerateBedUsageGraph = formatRateGraph(
+      MildModerateBedUsageData.date,
+      MildModerateBedUsageData.data
+    )
+    const mildModerateBedUsageItems = [
+      '軽症中等症病床確保数',
+      '軽症中等症入院患者数',
+      '軽症中等症病床使用率'
+    ]
+    // 直近1週間の人口10万人あたり新規陽性者数
+    const numberOfNewPositivesGraph = formatSimpleGraph(
+      NumberOfNewPositivesData.date,
+      NumberOfNewPositivesData.data
+    )
+
     const data = {
       Data,
       patientsTable,
@@ -242,6 +312,11 @@ export default {
       treatedGraph,
       onsetGraph,
       sumInfoOfPatients,
+      severeBedUsageGraph,
+      severeBedUsageItems,
+      mildModerateBedUsageGraph,
+      mildModerateBedUsageItems,
+      numberOfNewPositivesGraph,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('大阪府の最新感染動向'),

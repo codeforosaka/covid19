@@ -1,0 +1,1799 @@
+{
+    "date": "2021/02/15 00:00",
+    "data": [
+        {
+            "date": "2020-04-23",
+            "denominator": 127,
+            "numerator": 58,
+            "rate": 45.7
+        },
+        {
+            "date": "2020-04-24",
+            "denominator": 155,
+            "numerator": 59,
+            "rate": 38.1
+        },
+        {
+            "date": "2020-04-25",
+            "denominator": 155,
+            "numerator": 61,
+            "rate": 39.4
+        },
+        {
+            "date": "2020-04-26",
+            "denominator": 155,
+            "numerator": 59,
+            "rate": 38.1
+        },
+        {
+            "date": "2020-04-27",
+            "denominator": 170,
+            "numerator": 59,
+            "rate": 34.7
+        },
+        {
+            "date": "2020-04-28",
+            "denominator": 170,
+            "numerator": 60,
+            "rate": 35.3
+        },
+        {
+            "date": "2020-04-29",
+            "denominator": 170,
+            "numerator": 62,
+            "rate": 36.5
+        },
+        {
+            "date": "2020-04-30",
+            "denominator": 170,
+            "numerator": 64,
+            "rate": 37.7
+        },
+        {
+            "date": "2020-05-01",
+            "denominator": 188,
+            "numerator": 61,
+            "rate": 32.5
+        },
+        {
+            "date": "2020-05-02",
+            "denominator": 188,
+            "numerator": 60,
+            "rate": 31.9
+        },
+        {
+            "date": "2020-05-03",
+            "denominator": 188,
+            "numerator": 60,
+            "rate": 31.9
+        },
+        {
+            "date": "2020-05-04",
+            "denominator": 188,
+            "numerator": 62,
+            "rate": 33.0
+        },
+        {
+            "date": "2020-05-05",
+            "denominator": 188,
+            "numerator": 61,
+            "rate": 32.5
+        },
+        {
+            "date": "2020-05-06",
+            "denominator": 188,
+            "numerator": 61,
+            "rate": 32.5
+        },
+        {
+            "date": "2020-05-07",
+            "denominator": 188,
+            "numerator": 59,
+            "rate": 31.4
+        },
+        {
+            "date": "2020-05-08",
+            "denominator": 188,
+            "numerator": 58,
+            "rate": 30.9
+        },
+        {
+            "date": "2020-05-09",
+            "denominator": 188,
+            "numerator": 56,
+            "rate": 29.8
+        },
+        {
+            "date": "2020-05-10",
+            "denominator": 188,
+            "numerator": 50,
+            "rate": 26.6
+        },
+        {
+            "date": "2020-05-11",
+            "denominator": 188,
+            "numerator": 50,
+            "rate": 26.6
+        },
+        {
+            "date": "2020-05-12",
+            "denominator": 188,
+            "numerator": 50,
+            "rate": 26.6
+        },
+        {
+            "date": "2020-05-13",
+            "denominator": 188,
+            "numerator": 45,
+            "rate": 23.9
+        },
+        {
+            "date": "2020-05-14",
+            "denominator": 188,
+            "numerator": 43,
+            "rate": 22.9
+        },
+        {
+            "date": "2020-05-15",
+            "denominator": 188,
+            "numerator": 41,
+            "rate": 21.8
+        },
+        {
+            "date": "2020-05-16",
+            "denominator": 188,
+            "numerator": 39,
+            "rate": 20.7
+        },
+        {
+            "date": "2020-05-17",
+            "denominator": 188,
+            "numerator": 39,
+            "rate": 20.7
+        },
+        {
+            "date": "2020-05-18",
+            "denominator": 188,
+            "numerator": 36,
+            "rate": 19.2
+        },
+        {
+            "date": "2020-05-19",
+            "denominator": 188,
+            "numerator": 37,
+            "rate": 19.7
+        },
+        {
+            "date": "2020-05-20",
+            "denominator": 188,
+            "numerator": 35,
+            "rate": 18.6
+        },
+        {
+            "date": "2020-05-21",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-05-22",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-05-23",
+            "denominator": 188,
+            "numerator": 24,
+            "rate": 12.8
+        },
+        {
+            "date": "2020-05-24",
+            "denominator": 188,
+            "numerator": 24,
+            "rate": 12.8
+        },
+        {
+            "date": "2020-05-25",
+            "denominator": 188,
+            "numerator": 25,
+            "rate": 13.3
+        },
+        {
+            "date": "2020-05-26",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-05-27",
+            "denominator": 188,
+            "numerator": 21,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-05-28",
+            "denominator": 188,
+            "numerator": 19,
+            "rate": 10.1
+        },
+        {
+            "date": "2020-05-29",
+            "denominator": 188,
+            "numerator": 18,
+            "rate": 9.6
+        },
+        {
+            "date": "2020-05-30",
+            "denominator": 188,
+            "numerator": 17,
+            "rate": 9.0
+        },
+        {
+            "date": "2020-05-31",
+            "denominator": 188,
+            "numerator": 16,
+            "rate": 8.5
+        },
+        {
+            "date": "2020-06-01",
+            "denominator": 188,
+            "numerator": 16,
+            "rate": 8.5
+        },
+        {
+            "date": "2020-06-02",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-03",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-04",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-05",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-06",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-07",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-08",
+            "denominator": 188,
+            "numerator": 15,
+            "rate": 8.0
+        },
+        {
+            "date": "2020-06-09",
+            "denominator": 188,
+            "numerator": 14,
+            "rate": 7.5
+        },
+        {
+            "date": "2020-06-10",
+            "denominator": 188,
+            "numerator": 10,
+            "rate": 5.3
+        },
+        {
+            "date": "2020-06-11",
+            "denominator": 188,
+            "numerator": 10,
+            "rate": 5.3
+        },
+        {
+            "date": "2020-06-12",
+            "denominator": 188,
+            "numerator": 9,
+            "rate": 4.8
+        },
+        {
+            "date": "2020-06-13",
+            "denominator": 188,
+            "numerator": 9,
+            "rate": 4.8
+        },
+        {
+            "date": "2020-06-14",
+            "denominator": 188,
+            "numerator": 9,
+            "rate": 4.8
+        },
+        {
+            "date": "2020-06-15",
+            "denominator": 188,
+            "numerator": 8,
+            "rate": 4.3
+        },
+        {
+            "date": "2020-06-16",
+            "denominator": 188,
+            "numerator": 7,
+            "rate": 3.7
+        },
+        {
+            "date": "2020-06-17",
+            "denominator": 188,
+            "numerator": 7,
+            "rate": 3.7
+        },
+        {
+            "date": "2020-06-18",
+            "denominator": 188,
+            "numerator": 6,
+            "rate": 3.2
+        },
+        {
+            "date": "2020-06-19",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-06-20",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-06-21",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-06-22",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-06-23",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-06-24",
+            "denominator": 188,
+            "numerator": 4,
+            "rate": 2.1
+        },
+        {
+            "date": "2020-06-25",
+            "denominator": 188,
+            "numerator": 4,
+            "rate": 2.1
+        },
+        {
+            "date": "2020-06-26",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-06-27",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-06-28",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-06-29",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-06-30",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-01",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-02",
+            "denominator": 188,
+            "numerator": 2,
+            "rate": 1.1
+        },
+        {
+            "date": "2020-07-03",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-04",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-05",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-06",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-07",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-08",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-09",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-10",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-11",
+            "denominator": 188,
+            "numerator": 3,
+            "rate": 1.6
+        },
+        {
+            "date": "2020-07-12",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-13",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-14",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-15",
+            "denominator": 188,
+            "numerator": 6,
+            "rate": 3.2
+        },
+        {
+            "date": "2020-07-16",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-17",
+            "denominator": 188,
+            "numerator": 4,
+            "rate": 2.1
+        },
+        {
+            "date": "2020-07-18",
+            "denominator": 188,
+            "numerator": 4,
+            "rate": 2.1
+        },
+        {
+            "date": "2020-07-19",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-20",
+            "denominator": 188,
+            "numerator": 5,
+            "rate": 2.7
+        },
+        {
+            "date": "2020-07-21",
+            "denominator": 188,
+            "numerator": 8,
+            "rate": 4.3
+        },
+        {
+            "date": "2020-07-22",
+            "denominator": 188,
+            "numerator": 10,
+            "rate": 5.3
+        },
+        {
+            "date": "2020-07-23",
+            "denominator": 188,
+            "numerator": 13,
+            "rate": 6.9
+        },
+        {
+            "date": "2020-07-24",
+            "denominator": 188,
+            "numerator": 12,
+            "rate": 6.4
+        },
+        {
+            "date": "2020-07-25",
+            "denominator": 188,
+            "numerator": 11,
+            "rate": 5.9
+        },
+        {
+            "date": "2020-07-26",
+            "denominator": 188,
+            "numerator": 11,
+            "rate": 5.9
+        },
+        {
+            "date": "2020-07-27",
+            "denominator": 188,
+            "numerator": 11,
+            "rate": 5.9
+        },
+        {
+            "date": "2020-07-28",
+            "denominator": 188,
+            "numerator": 13,
+            "rate": 6.9
+        },
+        {
+            "date": "2020-07-29",
+            "denominator": 188,
+            "numerator": 16,
+            "rate": 8.5
+        },
+        {
+            "date": "2020-07-30",
+            "denominator": 188,
+            "numerator": 18,
+            "rate": 9.6
+        },
+        {
+            "date": "2020-07-31",
+            "denominator": 188,
+            "numerator": 19,
+            "rate": 10.1
+        },
+        {
+            "date": "2020-08-01",
+            "denominator": 188,
+            "numerator": 20,
+            "rate": 10.6
+        },
+        {
+            "date": "2020-08-02",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-08-03",
+            "denominator": 188,
+            "numerator": 27,
+            "rate": 14.4
+        },
+        {
+            "date": "2020-08-04",
+            "denominator": 188,
+            "numerator": 26,
+            "rate": 13.8
+        },
+        {
+            "date": "2020-08-05",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-08-06",
+            "denominator": 188,
+            "numerator": 35,
+            "rate": 18.6
+        },
+        {
+            "date": "2020-08-07",
+            "denominator": 188,
+            "numerator": 36,
+            "rate": 19.2
+        },
+        {
+            "date": "2020-08-08",
+            "denominator": 188,
+            "numerator": 40,
+            "rate": 21.3
+        },
+        {
+            "date": "2020-08-09",
+            "denominator": 188,
+            "numerator": 38,
+            "rate": 20.2
+        },
+        {
+            "date": "2020-08-10",
+            "denominator": 188,
+            "numerator": 41,
+            "rate": 21.8
+        },
+        {
+            "date": "2020-08-11",
+            "denominator": 188,
+            "numerator": 49,
+            "rate": 26.1
+        },
+        {
+            "date": "2020-08-12",
+            "denominator": 188,
+            "numerator": 55,
+            "rate": 29.3
+        },
+        {
+            "date": "2020-08-13",
+            "denominator": 188,
+            "numerator": 53,
+            "rate": 28.2
+        },
+        {
+            "date": "2020-08-14",
+            "denominator": 188,
+            "numerator": 64,
+            "rate": 34.0
+        },
+        {
+            "date": "2020-08-15",
+            "denominator": 188,
+            "numerator": 70,
+            "rate": 37.2
+        },
+        {
+            "date": "2020-08-16",
+            "denominator": 188,
+            "numerator": 72,
+            "rate": 38.3
+        },
+        {
+            "date": "2020-08-17",
+            "denominator": 188,
+            "numerator": 70,
+            "rate": 37.2
+        },
+        {
+            "date": "2020-08-18",
+            "denominator": 188,
+            "numerator": 65,
+            "rate": 34.6
+        },
+        {
+            "date": "2020-08-19",
+            "denominator": 188,
+            "numerator": 60,
+            "rate": 31.9
+        },
+        {
+            "date": "2020-08-20",
+            "denominator": 188,
+            "numerator": 63,
+            "rate": 33.5
+        },
+        {
+            "date": "2020-08-21",
+            "denominator": 188,
+            "numerator": 62,
+            "rate": 33.0
+        },
+        {
+            "date": "2020-08-22",
+            "denominator": 188,
+            "numerator": 66,
+            "rate": 35.1
+        },
+        {
+            "date": "2020-08-23",
+            "denominator": 188,
+            "numerator": 68,
+            "rate": 36.2
+        },
+        {
+            "date": "2020-08-24",
+            "denominator": 188,
+            "numerator": 67,
+            "rate": 35.6
+        },
+        {
+            "date": "2020-08-25",
+            "denominator": 188,
+            "numerator": 72,
+            "rate": 38.3
+        },
+        {
+            "date": "2020-08-26",
+            "denominator": 188,
+            "numerator": 68,
+            "rate": 36.2
+        },
+        {
+            "date": "2020-08-27",
+            "denominator": 188,
+            "numerator": 58,
+            "rate": 30.9
+        },
+        {
+            "date": "2020-08-28",
+            "denominator": 188,
+            "numerator": 58,
+            "rate": 30.9
+        },
+        {
+            "date": "2020-08-29",
+            "denominator": 188,
+            "numerator": 58,
+            "rate": 30.9
+        },
+        {
+            "date": "2020-08-30",
+            "denominator": 188,
+            "numerator": 61,
+            "rate": 32.5
+        },
+        {
+            "date": "2020-08-31",
+            "denominator": 188,
+            "numerator": 60,
+            "rate": 31.9
+        },
+        {
+            "date": "2020-09-01",
+            "denominator": 188,
+            "numerator": 61,
+            "rate": 32.5
+        },
+        {
+            "date": "2020-09-02",
+            "denominator": 188,
+            "numerator": 53,
+            "rate": 28.2
+        },
+        {
+            "date": "2020-09-03",
+            "denominator": 188,
+            "numerator": 51,
+            "rate": 27.1
+        },
+        {
+            "date": "2020-09-04",
+            "denominator": 188,
+            "numerator": 49,
+            "rate": 26.1
+        },
+        {
+            "date": "2020-09-05",
+            "denominator": 188,
+            "numerator": 47,
+            "rate": 25.0
+        },
+        {
+            "date": "2020-09-06",
+            "denominator": 188,
+            "numerator": 47,
+            "rate": 25.0
+        },
+        {
+            "date": "2020-09-07",
+            "denominator": 188,
+            "numerator": 46,
+            "rate": 24.5
+        },
+        {
+            "date": "2020-09-08",
+            "denominator": 188,
+            "numerator": 44,
+            "rate": 23.4
+        },
+        {
+            "date": "2020-09-09",
+            "denominator": 188,
+            "numerator": 42,
+            "rate": 22.3
+        },
+        {
+            "date": "2020-09-10",
+            "denominator": 188,
+            "numerator": 40,
+            "rate": 21.3
+        },
+        {
+            "date": "2020-09-11",
+            "denominator": 188,
+            "numerator": 35,
+            "rate": 18.6
+        },
+        {
+            "date": "2020-09-12",
+            "denominator": 188,
+            "numerator": 34,
+            "rate": 18.1
+        },
+        {
+            "date": "2020-09-13",
+            "denominator": 188,
+            "numerator": 36,
+            "rate": 19.2
+        },
+        {
+            "date": "2020-09-14",
+            "denominator": 188,
+            "numerator": 36,
+            "rate": 19.2
+        },
+        {
+            "date": "2020-09-15",
+            "denominator": 188,
+            "numerator": 35,
+            "rate": 18.6
+        },
+        {
+            "date": "2020-09-16",
+            "denominator": 188,
+            "numerator": 28,
+            "rate": 14.9
+        },
+        {
+            "date": "2020-09-17",
+            "denominator": 188,
+            "numerator": 31,
+            "rate": 16.5
+        },
+        {
+            "date": "2020-09-18",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-09-19",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-09-20",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-09-21",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-09-22",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-09-23",
+            "denominator": 188,
+            "numerator": 28,
+            "rate": 14.9
+        },
+        {
+            "date": "2020-09-24",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-09-25",
+            "denominator": 188,
+            "numerator": 29,
+            "rate": 15.4
+        },
+        {
+            "date": "2020-09-26",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-09-27",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-09-28",
+            "denominator": 188,
+            "numerator": 30,
+            "rate": 16.0
+        },
+        {
+            "date": "2020-09-29",
+            "denominator": 188,
+            "numerator": 27,
+            "rate": 14.4
+        },
+        {
+            "date": "2020-09-30",
+            "denominator": 188,
+            "numerator": 27,
+            "rate": 14.4
+        },
+        {
+            "date": "2020-10-01",
+            "denominator": 188,
+            "numerator": 24,
+            "rate": 12.8
+        },
+        {
+            "date": "2020-10-02",
+            "denominator": 188,
+            "numerator": 24,
+            "rate": 12.8
+        },
+        {
+            "date": "2020-10-03",
+            "denominator": 188,
+            "numerator": 22,
+            "rate": 11.7
+        },
+        {
+            "date": "2020-10-04",
+            "denominator": 188,
+            "numerator": 22,
+            "rate": 11.7
+        },
+        {
+            "date": "2020-10-05",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-10-06",
+            "denominator": 188,
+            "numerator": 21,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-10-07",
+            "denominator": 188,
+            "numerator": 22,
+            "rate": 11.7
+        },
+        {
+            "date": "2020-10-08",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-10-09",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-10-10",
+            "denominator": 188,
+            "numerator": 23,
+            "rate": 12.2
+        },
+        {
+            "date": "2020-10-11",
+            "denominator": 188,
+            "numerator": 24,
+            "rate": 12.8
+        },
+        {
+            "date": "2020-10-12",
+            "denominator": 188,
+            "numerator": 22,
+            "rate": 11.7
+        },
+        {
+            "date": "2020-10-13",
+            "denominator": 188,
+            "numerator": 21,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-10-14",
+            "denominator": 188,
+            "numerator": 21,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-10-15",
+            "denominator": 206,
+            "numerator": 21,
+            "rate": 10.2
+        },
+        {
+            "date": "2020-10-16",
+            "denominator": 206,
+            "numerator": 19,
+            "rate": 9.2
+        },
+        {
+            "date": "2020-10-17",
+            "denominator": 206,
+            "numerator": 19,
+            "rate": 9.2
+        },
+        {
+            "date": "2020-10-18",
+            "denominator": 206,
+            "numerator": 20,
+            "rate": 9.7
+        },
+        {
+            "date": "2020-10-19",
+            "denominator": 206,
+            "numerator": 16,
+            "rate": 7.8
+        },
+        {
+            "date": "2020-10-20",
+            "denominator": 206,
+            "numerator": 19,
+            "rate": 9.2
+        },
+        {
+            "date": "2020-10-21",
+            "denominator": 206,
+            "numerator": 19,
+            "rate": 9.2
+        },
+        {
+            "date": "2020-10-22",
+            "denominator": 206,
+            "numerator": 22,
+            "rate": 10.7
+        },
+        {
+            "date": "2020-10-23",
+            "denominator": 206,
+            "numerator": 22,
+            "rate": 10.7
+        },
+        {
+            "date": "2020-10-24",
+            "denominator": 206,
+            "numerator": 23,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-10-25",
+            "denominator": 206,
+            "numerator": 23,
+            "rate": 11.2
+        },
+        {
+            "date": "2020-10-26",
+            "denominator": 206,
+            "numerator": 26,
+            "rate": 12.6
+        },
+        {
+            "date": "2020-10-27",
+            "denominator": 206,
+            "numerator": 26,
+            "rate": 12.6
+        },
+        {
+            "date": "2020-10-28",
+            "denominator": 206,
+            "numerator": 25,
+            "rate": 12.1
+        },
+        {
+            "date": "2020-10-29",
+            "denominator": 206,
+            "numerator": 25,
+            "rate": 12.1
+        },
+        {
+            "date": "2020-10-30",
+            "denominator": 206,
+            "numerator": 26,
+            "rate": 12.6
+        },
+        {
+            "date": "2020-10-31",
+            "denominator": 206,
+            "numerator": 25,
+            "rate": 12.1
+        },
+        {
+            "date": "2020-11-01",
+            "denominator": 206,
+            "numerator": 26,
+            "rate": 12.6
+        },
+        {
+            "date": "2020-11-02",
+            "denominator": 206,
+            "numerator": 31,
+            "rate": 15.1
+        },
+        {
+            "date": "2020-11-03",
+            "denominator": 206,
+            "numerator": 32,
+            "rate": 15.5
+        },
+        {
+            "date": "2020-11-04",
+            "denominator": 206,
+            "numerator": 37,
+            "rate": 18.0
+        },
+        {
+            "date": "2020-11-05",
+            "denominator": 206,
+            "numerator": 40,
+            "rate": 19.4
+        },
+        {
+            "date": "2020-11-06",
+            "denominator": 206,
+            "numerator": 42,
+            "rate": 20.4
+        },
+        {
+            "date": "2020-11-07",
+            "denominator": 206,
+            "numerator": 43,
+            "rate": 20.9
+        },
+        {
+            "date": "2020-11-08",
+            "denominator": 206,
+            "numerator": 46,
+            "rate": 22.3
+        },
+        {
+            "date": "2020-11-09",
+            "denominator": 206,
+            "numerator": 51,
+            "rate": 24.8
+        },
+        {
+            "date": "2020-11-10",
+            "denominator": 206,
+            "numerator": 58,
+            "rate": 28.2
+        },
+        {
+            "date": "2020-11-11",
+            "denominator": 206,
+            "numerator": 63,
+            "rate": 30.6
+        },
+        {
+            "date": "2020-11-12",
+            "denominator": 206,
+            "numerator": 60,
+            "rate": 29.1
+        },
+        {
+            "date": "2020-11-13",
+            "denominator": 206,
+            "numerator": 58,
+            "rate": 28.2
+        },
+        {
+            "date": "2020-11-14",
+            "denominator": 206,
+            "numerator": 62,
+            "rate": 30.1
+        },
+        {
+            "date": "2020-11-15",
+            "denominator": 206,
+            "numerator": 66,
+            "rate": 32.0
+        },
+        {
+            "date": "2020-11-16",
+            "denominator": 206,
+            "numerator": 72,
+            "rate": 35.0
+        },
+        {
+            "date": "2020-11-17",
+            "denominator": 206,
+            "numerator": 69,
+            "rate": 33.5
+        },
+        {
+            "date": "2020-11-18",
+            "denominator": 206,
+            "numerator": 72,
+            "rate": 35.0
+        },
+        {
+            "date": "2020-11-19",
+            "denominator": 206,
+            "numerator": 76,
+            "rate": 36.9
+        },
+        {
+            "date": "2020-11-20",
+            "denominator": 206,
+            "numerator": 81,
+            "rate": 39.3
+        },
+        {
+            "date": "2020-11-21",
+            "denominator": 206,
+            "numerator": 87,
+            "rate": 42.2
+        },
+        {
+            "date": "2020-11-22",
+            "denominator": 206,
+            "numerator": 91,
+            "rate": 44.2
+        },
+        {
+            "date": "2020-11-23",
+            "denominator": 206,
+            "numerator": 98,
+            "rate": 47.6
+        },
+        {
+            "date": "2020-11-24",
+            "denominator": 206,
+            "numerator": 103,
+            "rate": 50.0
+        },
+        {
+            "date": "2020-11-25",
+            "denominator": 206,
+            "numerator": 107,
+            "rate": 51.9
+        },
+        {
+            "date": "2020-11-26",
+            "denominator": 206,
+            "numerator": 108,
+            "rate": 52.4
+        },
+        {
+            "date": "2020-11-27",
+            "denominator": 206,
+            "numerator": 107,
+            "rate": 51.9
+        },
+        {
+            "date": "2020-11-28",
+            "denominator": 206,
+            "numerator": 107,
+            "rate": 51.9
+        },
+        {
+            "date": "2020-11-29",
+            "denominator": 206,
+            "numerator": 110,
+            "rate": 53.4
+        },
+        {
+            "date": "2020-11-30",
+            "denominator": 206,
+            "numerator": 124,
+            "rate": 60.2
+        },
+        {
+            "date": "2020-12-01",
+            "denominator": 206,
+            "numerator": 125,
+            "rate": 60.7
+        },
+        {
+            "date": "2020-12-02",
+            "denominator": 206,
+            "numerator": 131,
+            "rate": 63.6
+        },
+        {
+            "date": "2020-12-03",
+            "denominator": 206,
+            "numerator": 136,
+            "rate": 66.0
+        },
+        {
+            "date": "2020-12-04",
+            "denominator": 206,
+            "numerator": 139,
+            "rate": 67.5
+        },
+        {
+            "date": "2020-12-05",
+            "denominator": 206,
+            "numerator": 132,
+            "rate": 64.1
+        },
+        {
+            "date": "2020-12-06",
+            "denominator": 206,
+            "numerator": 141,
+            "rate": 68.5
+        },
+        {
+            "date": "2020-12-07",
+            "denominator": 206,
+            "numerator": 141,
+            "rate": 68.5
+        },
+        {
+            "date": "2020-12-08",
+            "denominator": 206,
+            "numerator": 146,
+            "rate": 70.9
+        },
+        {
+            "date": "2020-12-09",
+            "denominator": 206,
+            "numerator": 147,
+            "rate": 71.4
+        },
+        {
+            "date": "2020-12-10",
+            "denominator": 206,
+            "numerator": 150,
+            "rate": 72.8
+        },
+        {
+            "date": "2020-12-11",
+            "denominator": 206,
+            "numerator": 155,
+            "rate": 75.2
+        },
+        {
+            "date": "2020-12-12",
+            "denominator": 206,
+            "numerator": 152,
+            "rate": 73.8
+        },
+        {
+            "date": "2020-12-13",
+            "denominator": 206,
+            "numerator": 158,
+            "rate": 76.7
+        },
+        {
+            "date": "2020-12-14",
+            "denominator": 206,
+            "numerator": 156,
+            "rate": 75.7
+        },
+        {
+            "date": "2020-12-15",
+            "denominator": 236,
+            "numerator": 158,
+            "rate": 67.0
+        },
+        {
+            "date": "2020-12-16",
+            "denominator": 236,
+            "numerator": 157,
+            "rate": 66.5
+        },
+        {
+            "date": "2020-12-17",
+            "denominator": 236,
+            "numerator": 157,
+            "rate": 66.5
+        },
+        {
+            "date": "2020-12-18",
+            "denominator": 236,
+            "numerator": 156,
+            "rate": 66.1
+        },
+        {
+            "date": "2020-12-19",
+            "denominator": 236,
+            "numerator": 158,
+            "rate": 67.0
+        },
+        {
+            "date": "2020-12-20",
+            "denominator": 236,
+            "numerator": 158,
+            "rate": 67.0
+        },
+        {
+            "date": "2020-12-21",
+            "denominator": 236,
+            "numerator": 165,
+            "rate": 69.9
+        },
+        {
+            "date": "2020-12-22",
+            "denominator": 236,
+            "numerator": 160,
+            "rate": 67.8
+        },
+        {
+            "date": "2020-12-23",
+            "denominator": 236,
+            "numerator": 162,
+            "rate": 68.6
+        },
+        {
+            "date": "2020-12-24",
+            "denominator": 236,
+            "numerator": 161,
+            "rate": 68.2
+        },
+        {
+            "date": "2020-12-25",
+            "denominator": 236,
+            "numerator": 162,
+            "rate": 68.6
+        },
+        {
+            "date": "2020-12-26",
+            "denominator": 236,
+            "numerator": 161,
+            "rate": 68.2
+        },
+        {
+            "date": "2020-12-27",
+            "denominator": 236,
+            "numerator": 161,
+            "rate": 68.2
+        },
+        {
+            "date": "2020-12-28",
+            "denominator": 236,
+            "numerator": 158,
+            "rate": 67.0
+        },
+        {
+            "date": "2020-12-29",
+            "denominator": 236,
+            "numerator": 150,
+            "rate": 63.6
+        },
+        {
+            "date": "2020-12-30",
+            "denominator": 236,
+            "numerator": 159,
+            "rate": 67.4
+        },
+        {
+            "date": "2020-12-31",
+            "denominator": 236,
+            "numerator": 164,
+            "rate": 69.5
+        },
+        {
+            "date": "2021-01-01",
+            "denominator": 236,
+            "numerator": 165,
+            "rate": 69.9
+        },
+        {
+            "date": "2021-01-02",
+            "denominator": 236,
+            "numerator": 165,
+            "rate": 69.9
+        },
+        {
+            "date": "2021-01-03",
+            "denominator": 236,
+            "numerator": 169,
+            "rate": 71.6
+        },
+        {
+            "date": "2021-01-04",
+            "denominator": 236,
+            "numerator": 171,
+            "rate": 72.5
+        },
+        {
+            "date": "2021-01-05",
+            "denominator": 236,
+            "numerator": 161,
+            "rate": 68.2
+        },
+        {
+            "date": "2021-01-06",
+            "denominator": 236,
+            "numerator": 166,
+            "rate": 70.3
+        },
+        {
+            "date": "2021-01-07",
+            "denominator": 236,
+            "numerator": 168,
+            "rate": 71.2
+        },
+        {
+            "date": "2021-01-08",
+            "denominator": 236,
+            "numerator": 168,
+            "rate": 71.2
+        },
+        {
+            "date": "2021-01-09",
+            "denominator": 236,
+            "numerator": 168,
+            "rate": 71.2
+        },
+        {
+            "date": "2021-01-10",
+            "denominator": 236,
+            "numerator": 171,
+            "rate": 72.5
+        },
+        {
+            "date": "2021-01-11",
+            "denominator": 236,
+            "numerator": 169,
+            "rate": 71.6
+        },
+        {
+            "date": "2021-01-12",
+            "denominator": 236,
+            "numerator": 171,
+            "rate": 72.5
+        },
+        {
+            "date": "2021-01-13",
+            "denominator": 236,
+            "numerator": 172,
+            "rate": 72.9
+        },
+        {
+            "date": "2021-01-14",
+            "denominator": 236,
+            "numerator": 175,
+            "rate": 74.2
+        },
+        {
+            "date": "2021-01-15",
+            "denominator": 236,
+            "numerator": 187,
+            "rate": 79.2
+        },
+        {
+            "date": "2021-01-16",
+            "denominator": 236,
+            "numerator": 185,
+            "rate": 78.4
+        },
+        {
+            "date": "2021-01-17",
+            "denominator": 236,
+            "numerator": 186,
+            "rate": 78.8
+        },
+        {
+            "date": "2021-01-18",
+            "denominator": 236,
+            "numerator": 187,
+            "rate": 79.2
+        },
+        {
+            "date": "2021-01-19",
+            "denominator": 236,
+            "numerator": 179,
+            "rate": 75.9
+        },
+        {
+            "date": "2021-01-20",
+            "denominator": 236,
+            "numerator": 185,
+            "rate": 78.4
+        },
+        {
+            "date": "2021-01-21",
+            "denominator": 236,
+            "numerator": 174,
+            "rate": 73.7
+        },
+        {
+            "date": "2021-01-22",
+            "denominator": 236,
+            "numerator": 170,
+            "rate": 72.0
+        },
+        {
+            "date": "2021-01-23",
+            "denominator": 236,
+            "numerator": 174,
+            "rate": 73.7
+        },
+        {
+            "date": "2021-01-24",
+            "denominator": 236,
+            "numerator": 175,
+            "rate": 74.2
+        },
+        {
+            "date": "2021-01-25",
+            "denominator": 236,
+            "numerator": 179,
+            "rate": 75.9
+        },
+        {
+            "date": "2021-01-26",
+            "denominator": 236,
+            "numerator": 184,
+            "rate": 78.0
+        },
+        {
+            "date": "2021-01-27",
+            "denominator": 236,
+            "numerator": 182,
+            "rate": 77.1
+        },
+        {
+            "date": "2021-01-28",
+            "denominator": 236,
+            "numerator": 181,
+            "rate": 76.7
+        },
+        {
+            "date": "2021-01-29",
+            "denominator": 236,
+            "numerator": 174,
+            "rate": 73.7
+        },
+        {
+            "date": "2021-01-30",
+            "denominator": 236,
+            "numerator": 179,
+            "rate": 75.9
+        },
+        {
+            "date": "2021-01-31",
+            "denominator": 236,
+            "numerator": 185,
+            "rate": 78.4
+        },
+        {
+            "date": "2021-02-01",
+            "denominator": 236,
+            "numerator": 179,
+            "rate": 75.9
+        },
+        {
+            "date": "2021-02-02",
+            "denominator": 236,
+            "numerator": 172,
+            "rate": 72.9
+        },
+        {
+            "date": "2021-02-03",
+            "denominator": 236,
+            "numerator": 166,
+            "rate": 70.3
+        },
+        {
+            "date": "2021-02-04",
+            "denominator": 236,
+            "numerator": 166,
+            "rate": 70.3
+        },
+        {
+            "date": "2021-02-05",
+            "denominator": 236,
+            "numerator": 155,
+            "rate": 65.7
+        },
+        {
+            "date": "2021-02-06",
+            "denominator": 236,
+            "numerator": 147,
+            "rate": 62.3
+        },
+        {
+            "date": "2021-02-07",
+            "denominator": 236,
+            "numerator": 149,
+            "rate": 63.1
+        },
+        {
+            "date": "2021-02-08",
+            "denominator": 236,
+            "numerator": 153,
+            "rate": 64.8
+        },
+        {
+            "date": "2021-02-09",
+            "denominator": 236,
+            "numerator": 146,
+            "rate": 61.9
+        },
+        {
+            "date": "2021-02-10",
+            "denominator": 236,
+            "numerator": 143,
+            "rate": 60.6
+        },
+        {
+            "date": "2021-02-11",
+            "denominator": 236,
+            "numerator": 141,
+            "rate": 59.8
+        },
+        {
+            "date": "2021-02-12",
+            "denominator": 236,
+            "numerator": 144,
+            "rate": 61.0
+        },
+        {
+            "date": "2021-02-13",
+            "denominator": 236,
+            "numerator": 137,
+            "rate": 58.1
+        },
+        {
+            "date": "2021-02-14",
+            "denominator": 236,
+            "numerator": 140,
+            "rate": 59.3
+        },
+        {
+            "date": "2021-02-15",
+            "denominator": 221,
+            "numerator": 142,
+            "rate": 64.3
+        }
+    ]
+}
