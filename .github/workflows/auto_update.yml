@@ -37,6 +37,12 @@ jobs:
           KINTONE_API_TOKEN_825: ${{ secrets.KINTONE_API_TOKEN_825 }}
           KINTONE_API_TOKEN_1161: ${{ secrets.KINTONE_API_TOKEN_1161 }}
           KINTONE_API_TOKEN_1166: ${{ secrets.KINTONE_API_TOKEN_1166 }}
+          KINTONE_API_TOKEN_1186: ${{ secrets.KINTONE_API_TOKEN_1186 }}
+          KINTONE_API_TOKEN_1187: ${{ secrets.KINTONE_API_TOKEN_1187 }}
+          KINTONE_API_TOKEN_1188: ${{ secrets.KINTONE_API_TOKEN_1188 }}
+          KINTONE_API_TOKEN_1189: ${{ secrets.KINTONE_API_TOKEN_1189 }}
+          KINTONE_API_TOKEN_1190: ${{ secrets.KINTONE_API_TOKEN_1190 }}
+          KINTONE_API_TOKEN_1191: ${{ secrets.KINTONE_API_TOKEN_1191 }}
           CLIENT: ${{ secrets.CLIENT }}
           NAME: teppei696
           EMAIL: teppei6969@gmail.com
