@@ -80,32 +80,6 @@
                   >{{ 入院調整中 }}{{ $t('人') }}</span
                 >
               </div>
-              <!--
-              <ul
-                :class="[
-                  $style.container,
-                  $style['sub-container'],
-                  $style['is-gray']
-                ]"
-              >
-                <li>
-                  <div :class="[$style.row, $style['is-gray']]">
-                    <span>{{ $t('入院待機中') }}</span>
-                    <span :class="$style.value"
-                      >{{ 入院待機中 }}{{ $t('人') }}</span
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div :class="[$style.row, $style['is-gray']]">
-                    <span>{{ $t('入院もしくは療養方法の調整中') }}</span>
-                    <span :class="$style.value"
-                      >{{ 入院もしくは療養方法の調整中 }}{{ $t('人') }}</span
-                    >
-                  </div>
-                </li>
-              </ul>
-              -->
             </li>
             <li>
               <div :class="[$style.row, $style['is-gray']]">
@@ -119,17 +93,13 @@
                 <span :class="$style.value">{{ 宿泊療養 }}{{ $t('人') }}</span>
               </div>
             </li>
-            <!--
-            <li>
-              <div :class="[$style.row, $style['is-gray']]">
-                <span>{{ $t('療養等調整中') }}</span>
-                <span :class="$style.value"
-                  >{{ 療養等調整中 }}{{ $t('人') }}</span
-                >
-              </div>
-            </li>
-            -->
           </ul>
+        </li>
+        <li>
+          <div :class="[$style.row, $style['is-current-positive']]">
+            <span>{{ $t('他府県管理') }}</span>
+            <span :class="$style.value">{{ 府外健康観察 }}{{ $t('人') }}</span>
+          </div>
         </li>
         <li>
           <div :class="[$style.row, $style['is-deceased']]">

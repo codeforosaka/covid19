@@ -117,7 +117,7 @@
           :title-id="'number-of-transmission-route'"
           :chart-id="'time-stacked-bar-chart2-transmission-route'"
           :chart-data="transmissionRouteGraph"
-          :date="Data.transmission_route_summary.date"
+          :date="TransmissionRouteSummary.date"
           :items="transmissionRouteItems"
           :labels="transmissionRouteLabels"
           :unit="$t('人')"
@@ -141,7 +141,7 @@
           :title-id="'number-of-contacts２'"
           :chart-id="'time-stacked-bar-chart-inspections'"
           :chart-data="contacts2Graph"
-          :date="Data.contacts2_summary.date"
+          :date="Contacts2Summary.date"
           :items="contacts2Items"
           :labels="contacts2Labels"
           :note="
@@ -179,6 +179,8 @@ import Data from '@/data/data.json'
 import SevereBedUsageData from '@/data/severe-bed-usage.json'
 import MildModerateBedUsageData from '@/data/mild-moderate-bed-usage.json'
 import NumberOfNewPositivesData from '@/data/number-of-new-positives-per-100_000-population.json'
+import Contacts2Summary from '@/data/contacts2-summary.json'
+import TransmissionRouteSummary from '@/data/transmission-route-summary.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
@@ -214,26 +216,26 @@ export default {
     const confirmedCases = formatConfirmedCases(Data.main_summary)
     // 感染経路不明者
     const transmissionRouteGraph = [
-      Data.transmission_route_summary.data['感染経路不明者'],
-      Data.transmission_route_summary.data['感染経路明確者']
+      TransmissionRouteSummary.data['感染経路不明者'],
+      TransmissionRouteSummary.data['感染経路明確者']
     ]
     const transmissionRouteItems = [
       this.$t('リンク不明'),
       this.$t('リンク確認')
     ]
-    const transmissionRouteLabels = Data.transmission_route_summary.labels
+    const transmissionRouteLabels = TransmissionRouteSummary.labels
     // 府民向け相談窓口相談件数
     const contactsGraph = formatGraph(Data.contacts1_summary.data)
     // 新型コロナ受診相談センターへの相談件数
     const contacts2Graph = [
-      Data.contacts2_summary.data['府管轄保健所'],
-      Data.contacts2_summary.data['政令中核市保健所']
+      Contacts2Summary.data['府管轄保健所'],
+      Contacts2Summary.data['政令中核市保健所']
     ]
     const contacts2Items = [
       this.$t('府管轄保健所'),
       this.$t('政令中核市保健所')
     ]
-    const contacts2Labels = Data.contacts2_summary.labels
+    const contacts2Labels = Contacts2Summary.labels
     // 治療終了者数
     const treatedGraph = formatGraph(Data.treated_summary.data)
     // 発症日別による陽性者数の推移
@@ -317,6 +319,8 @@ export default {
       mildModerateBedUsageGraph,
       mildModerateBedUsageItems,
       numberOfNewPositivesGraph,
+      TransmissionRouteSummary,
+      Contacts2Summary,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('大阪府の最新感染動向'),

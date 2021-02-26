@@ -50,6 +50,7 @@
 </style>
 
 <script>
+import dayjs from 'dayjs'
 import DataView from '@/components/DataView.vue'
 import DataSelector from '@/components/DataSelector.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
@@ -217,7 +218,7 @@ export default {
                 fontColor: '#808080',
                 maxRotation: 0,
                 callback: label => {
-                  return label.split('/')[1]
+                  return dayjs(label).format('D')
                 }
               }
               // #2384: If you set "type" to "time", make sure that the bars at both ends are not hidden.
@@ -241,7 +242,6 @@ export default {
               type: 'time',
               time: {
                 unit: 'month',
-                parser: 'M/D',
                 displayFormats: {
                   month: 'MMM'
                 }
@@ -322,7 +322,7 @@ export default {
                 maxRotation: 0,
                 minRotation: 0,
                 callback: label => {
-                  return label.split('/')[1]
+                  return dayjs(label).format('D')
                 }
               }
             },
@@ -343,7 +343,10 @@ export default {
               },
               type: 'time',
               time: {
-                unit: 'month'
+                unit: 'month',
+                displayFormats: {
+                  month: 'MMM'
+                }
               }
             }
           ],

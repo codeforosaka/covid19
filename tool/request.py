@@ -15,6 +15,8 @@ class DataJson:
         self.severe_bed_usage_file = 'severe-bed-usage.json'
         self.mild_moderate_bed_usage_file = 'mild-moderate-bed-usage.json'
         self.number_of_new_positives_file = 'number-of-new-positives-per-100_000-population.json'
+        self.transmission_route_summary_file = 'transmission-route-summary.json'
+        self.contacts2_summary_file = 'contacts2-summary.json'
         self.cert_txt = './tool/client.txt'
         self.token_param = 'X-Cybozu-API-Token'
         self.token_env = 'KINTONE_API_TOKEN_'
@@ -34,6 +36,14 @@ class DataJson:
         #   number-of-new-positives-per-100_000-population.json
         self.current_data_json['number_of_new_positives'] = self.get_json(
             self.number_of_new_positives_file
+            )
+        #   transmission-route-summary.json
+        self.current_data_json['transmission_route_summary'] = self.get_json(
+            self.transmission_route_summary_file
+            )
+        #   contacts2_summary.json
+        self.current_data_json['contacts2_summary'] = self.get_json(
+            self.contacts2_summary_file
             )
         # 全データ込
         self.data_json = {}
@@ -247,10 +257,7 @@ class DataJson:
             self.transmission_route_json['data']['感染経路明確者'].append(
                 int(record['陽性人数']['value']) - int(record['リンク不明者']['value'])
             )
-            d_date = datetime.strptime(record['日付']['value'], "%Y-%m-%d")
-            self.transmission_route_json['labels'].append(
-                f'{d_date.month}/{d_date.day}'
-            )
+            self.transmission_route_json['labels'].append(record['日付']['value'])
             # 退院・解除済累計
             data_treated = {}
             data_treated['日付'] = record['日付']['value'] + 'T08:00:00.000Z'
@@ -306,10 +313,7 @@ class DataJson:
             self.contacts2_summary_json['data']['政令中核市保健所'].append(
                 int(record['政令中核市']['value'])
             )
-            d_date = datetime.strptime(record['日付']['value'], "%Y-%m-%d")
-            self.contacts2_summary_json['labels'].append(
-                f'{d_date.month}/{d_date.day}'
-            )
+            self.contacts2_summary_json['labels'].append(record['日付']['value'])
             d_date = datetime.strptime(record['日付']['value'], "%Y-%m-%d")
             self.contacts2_summary_json["date"] = d_date.strftime('%Y/%m/%d') + ' 00:00'
             # オープンデータ用
@@ -526,6 +530,14 @@ class DataJson:
 
 if __name__ == "__main__":
     data = DataJson().get_data()
+    # data.jsonをどんどん分割していきます。
+    if 'contacts2_summary' in data:
+        contacts2_summary_data = data.pop('contacts2_summary')
+        DataJson().dumps_json('contacts2-summary.json', contacts2_summary_data)
+    if 'transmission_route_summary' in data:
+        transmission_route_summary_data = data.pop('transmission_route_summary')
+        DataJson().dumps_json('transmission-route-summary.json', transmission_route_summary_data)
+
     if 'patients_open' in data:
         patients_open_data = data.pop('patients_open')
         DataJson().dumps_open_json('patients.csv', patients_open_data)

@@ -106,8 +106,7 @@ export default (data: DataType) => {
     formattedData['入院調整中'] +
     formattedData['自宅療養'] +
     formattedData['宿泊療養'] +
-    formattedData['療養等調整中'] +
-    formattedData['府外健康観察']
+    formattedData['療養等調整中']
 
   return formattedData
 }

@@ -2,7 +2,6 @@
   <data-view class="SvgCard" :title="title" :title-id="titleId" :date="date">
     <slot />
     <div class="note">
-      {{ $t('※現在陽性者数には、府外で健康観察を実施している方を含む') }}<br />
       {{ $t('※11月15日までは再陽性者を除き、11月16日以降は再陽性者を含む')
       }}<br />
       {{ $t('※11月16日以降、検査実施件数に再陽性検査数を含む') }}
