@@ -197,5 +197,15 @@
   "※11月15日までは再陽性者を除き、11月16日以降は再陽性者を含む": "*The number of those who re-tested positive is included after November 16 while it is excluded up to November 15.",
   "※11月16日以降、検査実施件数に再陽性検査数を含む": "After November 16, the number of re-tests is included in the total number of tests conducted ",
   "オープンデータへのリンク": "Link to open-data",
-  "※各自治体からの報告状況により数値が後日更新される場合があります": "The number might be updated at a later date depending on the report from each municipality."
+  "※各自治体からの報告状況により数値が後日更新される場合があります": "The number might be updated at a later date depending on the report from each municipality.",
+  "他府県管理": "Transferred to other prefectures",
+  "重症病床使用率": "Occupancy rate of hospital beds for severe symptom patients ",
+  "重症病床確保数": "Number of hospital beds available for severe symptom patients ",
+  "重症入院患者数": "Number of severe symptom inpatients",
+  "軽症中等症病床使用率": "Occupancy rate of hospital beds for mild-moderate symptom patients",
+  "軽症中等症病床確保数": "Number of beds available for mild-moderate patients",
+  "軽症中等症入院患者数": "Number of mild-moderate symptom inpatients",
+  "直近1週間の人口10万人あたり新規陽性者数": "Number of new positive results per 100,000 persons during the previous week",
+  "発症日別による陽性者数の推移": "Trend of positive result numbers per occurrence date",
+  "※11月15日までは再陽性検査数を除き、11月16日以降は再陽性検査数を含む": "Until November 15: Number of re-tests that turned out positive is NOT included After November 16: Number of re-tests that turned out positive is included"
 }

@@ -278,9 +278,9 @@ export default {
       SevereBedUsageData.data
     )
     const severeBedUsageItems = [
-      '重症病床確保数',
-      '重症入院患者数',
-      '重症病床使用率'
+      this.$t('重症病床確保数'),
+      this.$t('重症入院患者数'),
+      this.$t('重症病床使用率')
     ]
     // 軽症中等症病床使用率
     const mildModerateBedUsageGraph = formatRateGraph(
@@ -288,9 +288,9 @@ export default {
       MildModerateBedUsageData.data
     )
     const mildModerateBedUsageItems = [
-      '軽症中等症病床確保数',
-      '軽症中等症入院患者数',
-      '軽症中等症病床使用率'
+      this.$t('軽症中等症病床確保数'),
+      this.$t('軽症中等症入院患者数'),
+      this.$t('軽症中等症病床使用率')
     ]
     // 直近1週間の人口10万人あたり新規陽性者数
     const numberOfNewPositivesGraph = formatSimpleGraph(
