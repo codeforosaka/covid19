@@ -1,5 +1,5 @@
 {
-    "date": "2021/04/09 00:00",
+    "date": "2021/04/10 00:00",
     "data": [
         {
             "date": "2020-04-23",
@@ -2092,26 +2092,32 @@
         {
             "date": "2021-04-06",
             "denominator": 224,
-            "numerator": 149,
-            "rate": 66.5
+            "numerator": 146,
+            "rate": 65.2
         },
         {
             "date": "2021-04-07",
             "denominator": 224,
-            "numerator": 158,
-            "rate": 70.5
+            "numerator": 155,
+            "rate": 69.2
         },
         {
             "date": "2021-04-08",
             "denominator": 224,
-            "numerator": 167,
-            "rate": 74.6
+            "numerator": 163,
+            "rate": 72.8
         },
         {
             "date": "2021-04-09",
             "denominator": 224,
             "numerator": 171,
             "rate": 76.3
+        },
+        {
+            "date": "2021-04-10",
+            "denominator": 224,
+            "numerator": 182,
+            "rate": 81.3
         }
     ]
 }
