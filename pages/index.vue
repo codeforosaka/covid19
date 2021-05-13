@@ -44,6 +44,7 @@
           :date="severeBedUsageGraph.updated"
           :items="severeBedUsageItems"
           :unit="$t('人')"
+          :unit2="$t('床')"
           :url="$t('./data/severe-bed-usage.csv')"
         />
       </v-col>
@@ -56,6 +57,7 @@
           :date="mildModerateBedUsageGraph.updated"
           :items="mildModerateBedUsageItems"
           :unit="$t('人')"
+          :unit2="$t('床')"
           :url="$t('./data/mild-moderate-bed-usage.csv')"
         />
       </v-col>

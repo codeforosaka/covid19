@@ -129,6 +129,11 @@ export default {
       required: false,
       default: ''
     },
+    unit2: {
+      type: String,
+      required: false,
+      default: ''
+    },
     note: {
       type: String,
       required: false,
@@ -223,6 +228,7 @@ export default {
     },
     displayOption() {
       const unit = this.unit
+      const unit2 = this.unit2
       const scaledTicksYAxisMax = this.scaledTicksYAxisMax
       const scaledTicksYAxisMaxRight = this.scaledTicksYAxisMaxRight
       const options = {
@@ -233,6 +239,8 @@ export default {
               let labelText = ''
               if (tooltipItem.datasetIndex === 2) {
                 labelText = tooltipItem.value.toLocaleString() + '%'
+              } else if (tooltipItem.datasetIndex === 0) {
+                labelText = parseInt(tooltipItem.value).toLocaleString() + unit2
               } else {
                 labelText = parseInt(tooltipItem.value).toLocaleString() + unit
               }
