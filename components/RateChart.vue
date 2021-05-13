@@ -450,7 +450,7 @@ export default {
       return Math.max(...this.chartData.denomList)
     },
     scaledTicksYAxisMaxRight() {
-      return 100
+      return Math.max(100, Math.max(...this.chartData.rateList))
     }
   },
   created() {
