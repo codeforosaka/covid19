@@ -1,5 +1,5 @@
 {
-    "date": "2021/05/18 00:00",
+    "date": "2021/05/20 00:00",
     "data": [
         {
             "date": "2020-04-23",
@@ -2346,6 +2346,18 @@
             "denominator": 2305,
             "numerator": 1661,
             "rate": 72.1
+        },
+        {
+            "date": "2021-05-19",
+            "denominator": 2319,
+            "numerator": 1628,
+            "rate": 70.2
+        },
+        {
+            "date": "2021-05-20",
+            "denominator": 2319,
+            "numerator": 1601,
+            "rate": 69.0
         }
     ]
 }
