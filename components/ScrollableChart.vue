@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     labelCount() {
-      return this.displayData.labels?.length || 0
+      return this.displayData.labels ? this.displayData.labels.length : 0
     }
   },
   watch: {
