@@ -53,15 +53,23 @@
         </v-container>
       </v-list>
       <div class="SideNavigation-Footer">
-        <small class="SideNavigation-Copyright" lang="en">
-          Content on This Site is Licensed Under a
-          <a
-            rel="license"
-            target="_blank"
-            href="http://creativecommons.org/licenses/by/4.0/"
-          >
-            Creative Commons Attribution 4.0 International License </a
-          ><br />
+        <i18n
+          tag="small"
+          path="このサイトの内容物は{creativeCommons}の下に提供されています。"
+          class="SideNavigation-Copyright"
+        >
+          <template v-slot:creativeCommons>
+            <a
+              rel="noopener"
+              target="_blank"
+              :href="$t('https://creativecommons.org/licenses/by/4.0/deed.ja')"
+            >
+              {{ $t('クリエイティブ・コモンズ 表示 4.0 ライセンス') }}
+            </a>
+          </template>
+        </i18n>
+        <br />
+        <small class="SideNavigation-Copyright">
           2020 Osaka Prefectural Government × CODE for OSAKA
         </small>
       </div>
